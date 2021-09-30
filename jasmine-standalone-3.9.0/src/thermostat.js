@@ -22,11 +22,15 @@ class Thermostat {
     } else {
       return 'Minimum temperature reached';
     }}
-}
 
+  // resetTemp() {
+  //   // const defaultTemp = 20;
+  //   this.temperature = 20;
+  // }
+}
 
 
 let thermostat = new Thermostat
 
-console.log(thermostat.up(15))
+// console.log(thermostat.up(15))
 // console.log(thermostat.down(14))

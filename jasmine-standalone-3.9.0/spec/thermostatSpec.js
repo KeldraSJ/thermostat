@@ -26,7 +26,7 @@ describe('Thermostat', () => {
     it('error if below 10', () => {
       expect(thermostat.down(11)).toEqual('Minimum temperature reached');
     });
-});
+  });
 
   describe('Power Save Mode', () => {
     it('starts with Power Save Mode on', () => {
@@ -42,4 +42,13 @@ describe('Thermostat', () => {
       expect(thermostat.up(15)).toEqual('Maximum temperature reached');
     });
   });
+
+  // decscribe('Reset temperature', () => {
+  //   it('resets to the default temperature 20 degrees', () => {
+  //     thermostat.up();
+  //     thermostat.resetTemp();
+  //     expect(thermostat.temperature).toEqual(20);
+  //   });
+  // });
+
 });
